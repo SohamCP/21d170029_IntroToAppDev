@@ -29,7 +29,7 @@ class _CounterPageState extends State<CounterPage> {
       _counter++;
     });
   }
-  void _decrementCounter() {
+  void _decreaseCounter() {
     setState(() {
       _counter--;
     });
@@ -64,8 +64,8 @@ class _CounterPageState extends State<CounterPage> {
           child:const Icon(Icons.add),
         ),
         FloatingActionButton(
-          onPressed: _decrementCounter,
-          tooltip: 'Decrement',
+          onPressed: _decreaseCounter,
+          tooltip: 'Decrease',
           child:const Icon(Icons.remove),
         ),])
     );
